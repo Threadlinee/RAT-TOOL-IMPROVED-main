@@ -12,7 +12,7 @@ def get_local_ip():
         s.close()
         return local_ip
     except:
-        return "192.168.1.10"
+        return "YOUR_IP_HERE"
 
 YOUR_IP = get_local_ip()
 PORT = 4444
