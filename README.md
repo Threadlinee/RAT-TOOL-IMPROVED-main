@@ -16,19 +16,49 @@ This tool allows you to:
 # ⚠ Disclaimer: This tool is for educational and authorized security testing purposes only. Unauthorized use against systems without explicit permission is illegal.
 
 ## 🔥 Features
-🖥️ Remote Command Execution – Run system commands on the victim's machine.
+[📁] File System:
+- file_list [path]        - List directory contents
+- file_read [path]       - Download a file
+- file_upload [loc] [rem] - Upload file to victim
+- file_delete [path]     - Delete file/folder
+- zip_folder [path]      - Compress folder
+- autodownload           - Grab files from Desktop/Docs/Downloads
 
-📸 Webcam Capture – Take snapshots from the victim’s webcam.
+[🔒] Encryption:
+- encrypt [file]         - Encrypt file (AES-256)
+- decrypt [file] [key]   - Decrypt file
 
-🖼️ Screenshot Capture – Monitor the victim’s screen in real-time.
+[🖥️] System Control:
+- sysinfo                - Get detailed system info
+- terminate [process]    - Kill a process
+- escalate               - Attempt admin privileges
+- shutdown               - Shutdown system
+- restart                - Restart system
+- logoff                 - Logoff current user
 
-📂 File System Access – Browse, download, and upload files.
+[📸] Surveillance:
+- webcam                 - Take webcam photo
+- screenshot             - Capture screen
+- record_mic [seconds]   - Record microphone
+- record_screen [seconds]- Record screen activity
 
-📊 System Information – Retrieve detailed system specs (OS, CPU, RAM, MAC, IP, etc.).
+[⌨️] Keylogger:
+- keylogger start        - Start keylogger
+- keylogger stop         - Stop keylogger
+- keylogger dump         - Get keylogger data
 
-📥 Auto-Download Files – Automatically fetch sensitive documents.
+[🌐] Network:
+- wifi_passwords         - Get saved WiFi passwords
+- port_scan [ip] [range] - Scan for open ports
 
-🔌 Persistent Connection – Maintains access until terminated.
+[📋] Clipboard:
+- clipboard_get          - Get clipboard contents
+- clipboard_set [text]   - Set clipboard text
+
+[⚙️] Other:
+- melt                   - Self-destruct payload
+- help                   - Show this menu
+- exit                   - Close connection
 
 ## ⚙️ Installation & Usage
 1️⃣ Setup (Attacker Machine)
